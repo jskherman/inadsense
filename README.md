@@ -43,7 +43,7 @@ Above this line is an ad, with a label under it that says "Advertisement". Nothi
 ```
 
 - [Quarto Document](/example.qmd)
-- [Quarto HTML Output]()
+- [Quarto HTML Output](https://jskherman.quarto.pub/inadsense-extension-website/)
 
 Here is also an example of the shortcode used in a website.
 
