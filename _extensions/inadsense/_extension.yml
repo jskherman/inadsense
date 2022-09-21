@@ -1,0 +1,6 @@
+title: Google Adsense In-Article Ad Unit Support
+author: Je Sian Keith Herman
+version: 1.0.0
+contributes:
+  shortcodes:
+    - inadsense.lua

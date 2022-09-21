@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Example Website"
+  cookie-consent:
+    type: express
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - example.qmd
+    right:
+      - icon: github
+        href: https://github.com/jskherman/inadsense
+        aria-label: GitHub
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+adsense:
+  client: ca-pub-xxxxxxxxxxxxxxxx
+  slot: 1234567890

@@ -1,0 +1,46 @@
+---
+title: "Example Page"
+subtitle: "Quarto Extension for Google Adsense In-Article Ad Unit Support"
+format: html
+---
+
+## An Example
+
+**Hi world**! *Below* this text you can find an ad by replacing it with a javascript `<script>` block. What do you think would be below this?
+
+{{< inadsense >}}
+
+Above this line is an ad, with a label under it that says "Advertisement". Nothing will show up above it because you have to specify your own credentials first in `_quarto.yml`. You also need to accept the cookie consent for ads and targeting cookies as well.
+
+Try inspecting this page by pressing `Ctrl` + `Shift` + `I` on Windows or `Cmd` + `Shift` + `I` on a Mac. You can also try with `F12` or right-clicking on "Advertisement" and choosing `Inspect`. You will see a `<ins>` tag and depending on your [cookie preferences](#open_preferences_center) you might see an iframe with the ad in it. But for now it is not there since we have not specified Google Adsense credentials yet in this website.
+
+## Installing
+
+```sh
+quarto install extension jskherman/inadsense
+```
+
+This will install the [extension](https://github.com/jskherman/inadsense) under the `_extensions` subdirectory.
+If you're using version control, you will want to check this in this directory.
+
+## Usage
+
+It is required that you need to specify `cookie-consent` and Google Adsense credentials in `_quarto.yml` first before you can insert ad units.
+
+Example: 
+```yaml
+website:
+  cookie-consent:
+    type: express # or implied
+
+adsense:
+    client: "ca-pub-xxxxxxxxxxxxxxxx"   # data-ad-client
+    slot:   "1234567890"                # data-ad-slot
+```
+
+You can get your credentials by signing up for a [Google Adsense account](https://www.google.com/adsense/start/), going to the `Ads` option on the left sidebar and creating a new in-article ad. For more information please refer to how this was achieved via Hugo by at godo.dev: [Inserting an Ad Unit to Hugo Content without Shortcode](https://www.godo.dev/tutorials/hugo-in-article-ad/)
+
+![Google Adsense](/assets/adsense.png)
+
+After that, you can then use the shortcode `{{< inadsense >}}` in your `qmd` files to embed ad units in pages.
+

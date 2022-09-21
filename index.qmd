@@ -1,0 +1,9 @@
+---
+title: "Example Website for Google Adsense Quarto Extension"
+---
+
+This is a Quarto website to showcase the Adsense extension.
+
+Go to the [Example Page](example.qmd) to see the extension in action.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
