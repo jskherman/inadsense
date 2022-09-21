@@ -42,10 +42,9 @@ After that, you can then use the shortcode `{{< inadsense >}}` in your `qmd` fil
 Above this line is an ad, with a label under it that says "Advertisement". Nothing will show up yet because you need to accept the cookie consent for ads and targeting cookies first.
 ```
 
+Here is also an example of the shortcode used in a website.
 - [Quarto Document](/example.qmd)
 - [Quarto HTML Output](https://jskherman.quarto.pub/inadsense-extension-website/)
-
-Here is also an example of the shortcode used in a website.
 
 ## Limitations
 
